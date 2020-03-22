@@ -1,123 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="https://github.com/0-l">
+        <link rel="stylesheet" type="text/css" href="css/awoo.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200|Roboto:100,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>start!</title>
 </head>
 <body>
     <div id="search">
-        <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
-    </div>
-    <div class="container">
-        <div id="clock"></div>
-        <div class="weather-container">
-            <div class="row">
-                <div id="weather-description"class="inline"></div>
-                <div class="inline">-</div>
-                <div id="temp" class="inline"></div>
-            </div>
-        </div>
-        <div class="bookmark-container">
-            <div class="bookmark-set">
-                <div class="bookmark-title">Daily</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://inbox.google.com/" target="_blank">Inbox</a>
-                    <a class="bookmark" href="https://github.com/" target="_blank">Github</a>
-                    <a class="bookmark" href="https://drive.google.com/" target="_blank">Drive</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-                <div class="bookmark-title">Media</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://youtube.com" target="_blank">Youtube</a>
-                    <a class="bookmark" href="https://netflix.com" target="_blank">Netflix</a>
-                    <a class="bookmark" href="https://crunchyroll.com" target="_blank">Crunchyroll</a>
-                    <a class="bookmark" href="https://" target="_blank">Amazon Prime</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-            <div class="bookmark-title">Reddit</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://reddit.com/r/overwatch" target="_blank">/r/overwatch</a>
-                    <a class="bookmark" href="https://reddit.com/r/pcmasterrace" target="_blank">/r/pcmasterrace</a>
-                    <a class="bookmark" href="https://reddit.com/r/me_irl" target="_blank">/r/me_irl</a>
-                    <a class="bookmark" href="https://reddit.com/r/battlestations" target="_blank">/r/battlestations</a>
-                    <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
-                    
-                    <a class="bookmark" href="https://reddit.com/r/news" target="_blank">/r/news</a>
-                </div>
-            </div>
-            <div class="bookmark-set">
-                <div class="bookmark-title">Social</div>
-                <div class="bookmark-inner-container">
-                    <a class="bookmark" href="https://twitter.com" target="_blank">Twitter</a>
-                    <a class="bookmark" href="https://facebook.com" target="_blank">Facebook</a>
-                </div>
-            </div>
+        <div>
+            <input type="text" spellcheck="false" placeholder="search">
+            <button class="close"><i class="material-icons">&#xE5CD;</i></button>
+            <ul class="search-engines"></ul>
         </div>
     </div>
+    <div id="links" class="-">
+        <div id="tabs" class="!-">
+            <cols>
+                <ul class="- indicator">
+                    <li active></li>
+                </ul>
+                <div class="+ widgets col-end">
+                    <p class="time">00<span>:00</span></p>
+                    <div class="!+ + weather-config">
+                        <input name="color" type="text" placeholder="location">
+                    </div>
+                    <div class="+ weather">
+                        <button class="!+ edit">edit</button>
+                        <p temperature>4ºC</p>
+                        <p weather class="+">
+                            <i class="material-icons" sunny>wb_sunny</i>
+                        </p>
+                    </div>
+                </div>
+            </cols>
+        </div>
+        <div id="panels">
+            <ul class="Social" active>
+                <div class="links">
+                    <li>
+                        <h1>Online Platform</h1>
+                        <a href="https://vk.com">Vk</a>
+                        <a href="https://twitter.com/home">Twitter</a>
+						            <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+						            <a href="https://https://reddit.com/">Reddit</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+						            <a href="https://keep.google.com/u/0/#home">keep</a>
+            						<a href="https://github.com/">github</a>
+                                    <a href="https://cccgrader.com/home.php">ccc</a>
+                    </li>
+                    <li>
+                        <h1>Online Platform</h1>
+                        <a href="https://vk.com">Vk</a>
+                        <a href="https://twitter.com/home">Twitter</a>
+						            <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+						            <a href="https://https://reddit.com/">Reddit</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+						            <a href="https://keep.google.com/u/0/#home">keep</a>
+            						<a href="https://github.com/">github</a>
+                                    <a href="https://cccgrader.com/home.php">ccc</a>
+                    </li>
+                    <li>
+                        <h1>Online Platform</h1>
+                        <a href="https://vk.com">Vk</a>
+                        <a href="https://twitter.com/home">Twitter</a>
+						            <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+						            <a href="https://https://reddit.com/">Reddit</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+						            <a href="https://keep.google.com/u/0/#home">keep</a>
+            						<a href="https://github.com/">github</a>
+                                    <a href="https://cccgrader.com/home.php">ccc</a>
+                    </li>
+                    <li>
+                        <h1>Media</h1>
+                        <a href="https://www.youtube.com/">Youtube</a>
+						<a href="https://portal.engineering.utoronto.ca/weblogin/sites/Applicantportal/?go=+Log+In+#/dashboard">uofteng</a>
+                        <a href="https://join.utoronto.ca/">uoft</a>
+						<a href="https://apps4.sis.yorku.ca/Apps/WebObjects/AAS.woa/wa/DirectAction/student?_cldee=dmluaG9jZW50QGdtYWlsLmNvbQ%3D%3D&recipientid=contact-7a97fc5b3f5446f8b8fcf2dfa9e888e3-80271fbd162f43908637884e506e7b37&esid=9d9960fc-726b-44ea-908c-e65524b755c1">yu</a>
+						<a href="https://quest.pecs.uwaterloo.ca/psp/SS/ACADEMIC/SA/?cmd=login&languageCd=ENG">uw</a>
+                        <a href="https://my.ryerson.ca/uPortal/f/myryerson/normal/render.uP">ru</a>
+                        <a href="https://epprd.mcmaster.ca/psc/prepprd/EMPLOYEE/EMPL/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">mac</a>
+                        <a href="https://uozone2.uottawa.ca/?language=en">uo</a>
+					</li>
+                    <li>
+                        <h1>Journal</h1>
+                        <a href="https://www.messenger.com/">messenger</a>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">gmail</a>
+                        <a href="https://mail.google.com/mail/u/1/#">tdsb</a>
+                        <a href="https://messages.google.com/web/conversations">sms</a>
+                        <a href="https://www.youtube.com/">Youtube</a>
+            <a href="https://portal.engineering.utoronto.ca/weblogin/sites/Applicantportal/?go=+Log+In+#/dashboard">uofteng</a>
+                        <a href="https://join.utoronto.ca/">uoft</a>
+            <a href="https://apps4.sis.yorku.ca/Apps/WebObjects/AAS.woa/wa/DirectAction/student?_cldee=dmluaG9jZW50QGdtYWlsLmNvbQ%3D%3D&recipientid=contact-7a97fc5b3f5446f8b8fcf2dfa9e888e3-80271fbd162f43908637884e506e7b37&esid=9d9960fc-726b-44ea-908c-e65524b755c1">yu</a>
+            <a href="https://quest.pecs.uwaterloo.ca/psp/SS/ACADEMIC/SA/?cmd=login&languageCd=ENG">uw</a>
+                        <a href="https://my.ryerson.ca/uPortal/f/myryerson/normal/render.uP">ru</a>
+                        <a href="https://epprd.mcmaster.ca/psc/prepprd/EMPLOYEE/EMPL/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">mac</a>
+                        <a href="https://uozone2.uottawa.ca/?language=en">uo</a>
 
-    <script>
-        // Search on enter key event
-        function search(e) {
-            if (e.keyCode == 13) {
-                var val = document.getElementById("search-field").value;
-                window.open("https://google.com/search?q=" + val);
-            }
-        }
-        // Get current time and format
-        function getTime() {
-            let date = new Date(),
-                min = date.getMinutes(),
-                sec = date.getSeconds(),
-                hour = date.getHours();
+                    </li>
+                </div>
+            </ul>
 
-            return "" + 
-                (hour < 10 ? ("0" + hour) : hour) + ":" + 
-                (min < 10 ? ("0" + min) : min) + ":" + 
-                (sec < 10 ? ("0" + sec) : sec);
-        }
+            <ul class="Test">
+              <div class="links">
+                  <li>
+                      <h1>Online Platform</h1>
+                      <a href="https://vk.com">Vk</a>
+                      <a href="https://twitter.com/home">Twitter</a>
+                      <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+                      <a href="https://https://reddit.com/">Reddit</a>
+                      <a href="https://www.instagram.com/">Instagram</a>
+                      <a href="https://keep.google.com/u/0/#home">keep</a>
+                      <a href="https://github.com/">github</a>
+                                  <a href="https://cccgrader.com/home.php">ccc</a>
+                  </li>
+                  <li>
+                      <h1>Online Platform</h1>
+                      <a href="https://vk.com">Vk</a>
+                      <a href="https://twitter.com/home">Twitter</a>
+                      <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+                      <a href="https://https://reddit.com/">Reddit</a>
+                      <a href="https://www.instagram.com/">Instagram</a>
+                      <a href="https://keep.google.com/u/0/#home">keep</a>
+                      <a href="https://github.com/">github</a>
+                                  <a href="https://cccgrader.com/home.php">ccc</a>
+                  </li>
+                  <li>
+                      <h1>Online Platform</h1>
+                      <a href="https://vk.com">Vk</a>
+                      <a href="https://twitter.com/home">Twitter</a>
+                      <a href="https://www.tumblr.com/dashboard">Tumblr</a>
+                      <a href="https://https://reddit.com/">Reddit</a>
+                      <a href="https://www.instagram.com/">Instagram</a>
+                      <a href="https://keep.google.com/u/0/#home">keep</a>
+                      <a href="https://github.com/">github</a>
+                                  <a href="https://cccgrader.com/home.php">ccc</a>
+                  </li>
+                  <li>
+                      <h1>Media</h1>
+                      <a href="https://www.youtube.com/">Youtube</a>
+          <a href="https://portal.engineering.utoronto.ca/weblogin/sites/Applicantportal/?go=+Log+In+#/dashboard">uofteng</a>
+                      <a href="https://join.utoronto.ca/">uoft</a>
+          <a href="https://apps4.sis.yorku.ca/Apps/WebObjects/AAS.woa/wa/DirectAction/student?_cldee=dmluaG9jZW50QGdtYWlsLmNvbQ%3D%3D&recipientid=contact-7a97fc5b3f5446f8b8fcf2dfa9e888e3-80271fbd162f43908637884e506e7b37&esid=9d9960fc-726b-44ea-908c-e65524b755c1">yu</a>
+          <a href="https://quest.pecs.uwaterloo.ca/psp/SS/ACADEMIC/SA/?cmd=login&languageCd=ENG">uw</a>
+                      <a href="https://my.ryerson.ca/uPortal/f/myryerson/normal/render.uP">ru</a>
+                      <a href="https://epprd.mcmaster.ca/psc/prepprd/EMPLOYEE/EMPL/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">mac</a>
+                      <a href="https://uozone2.uottawa.ca/?language=en">uo</a>
+        </li>
+        <li>
+                      <h1>Journal</h1>
+                      <a href="https://www.messenger.com/">messenger</a>
+                      <a href="https://mail.google.com/mail/u/0/#inbox">gmail</a>
+                      <a href="https://mail.google.com/mail/u/1/#">tdsb</a>
+                      <a href="https://messages.google.com/web/conversations">sms</a>
 
-        window.onload = () => {
-            let xhr = new XMLHttpRequest();
-            // Request to open weather map
-            xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?id=4737316&units=imperial&appid=e5b292ae2f9dae5f29e11499c2d82ece');
-            xhr.onload = () => {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        let json = JSON.parse(xhr.responseText);
-                        console.log(json);
-                        document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + " F";
-                        document.getElementById("weather-description").innerHTML = json.weather[0].description;
-                    } else {
-                        console.log('error msg: ' + xhr.status);
-                    }
-                }
-            }
-            xhr.send();
-            // Set up the clock
-            document.getElementById("clock").innerHTML = getTime();
-            // Set clock interval to tick clock
-            setInterval( () => {
-                document.getElementById("clock").innerHTML = getTime();
-            },100);
-        }
+                  </li>
+              </div>
+            </ul>
+            <ul class="fun">
+                <div class="links">
+                    <li><a href="https://www.twitch.tv/directory/following">twitch</a></li>
+					<li><a href="https://www.reddit.com/">reddit</a></li>
+					<li><a href="https://twitter.com/">twitter</a></li>
+                    <li><a href="https://www.youtube.com/">youtube</a></li>
+                    <li><a href="https://www.yelp.ca/user_details?userid=QJsKwW6TyzjTZNwzse975Q">yelp</a></li>
+                    <li><a href="https://anilist.co/user/cosoki/">anilist</a></li>
+                    <li><a href="https://anichart.net/">anichart</a></li>
+                    <li><a href="https://mangadex.org/follows/">manga</a></li>
+                    <li><a href="https://www.amiami.com/eng/">amiami</a></li>
+					<li><a href="https://www.reddit.com/user/Vinhocent/m/mhp/">mhp</a></li>
 
-        document.addEventListener("keydown", event => {
-            if (event.keyCode == 32) {          // Spacebar code to open search
-                document.getElementById('search').style.display = 'flex';
-                document.getElementById('search-field').focus();
-            } else if (event.keyCode == 27) {   // Esc to close search
-                document.getElementById('search-field').value = '';
-                document.getElementById('search-field').blur();
-                document.getElementById('search').style.display = 'none';
-            }
-        });
-    </script>
+
+                </div>
+            </ul>
+			<ul class="boards">
+                <div class="links">
+
+                    <li><a href="http://boards.4channel.org/g//">/g/</a>&emsp;
+                        <a href="http://boards.4channel.org/a//">/a/</a></li>
+                    <li><a href="http://boards.4channel.org/w//">/w/</a>&emsp;
+                        <a href="http://boards.4channel.org/wg//">/wg/</a></li>
+                    <li><a href="http://boards.4channel.org/c//">/c/</a>&emsp;
+                        <a href="http://boards.4channel.org/v//">/v/</a></li>
+                    <li><a href="http://boards.4channel.org/ck//">/ck/</a>&emsp;
+                        <a href="https://boards.4channel.org/sci//">/sci/</a></li>
+                    <li><a href="https://wizchan.org/all/">/wizchan/</a></li>
+                    <li><a href="https://www.lainchan.org/%CE%A9/">/lainchain/</a></li>
+					<li><a href="https://sushigirl.us/kaitensushi/">/kaitensushi/</a></li>
+
+
+
+
+
+                </div>
+            </ul>
+            <ul class="WW">
+                      <div class="links">
+
+                          <li><a href="http://boards.4channel.org/g//">/g/</a>&emsp;
+                              <a href="http://boards.4channel.org/a//">/a/</a></li>
+                          <li><a href="http://boards.4channel.org/w//">/w/</a>&emsp;
+                              <a href="http://boards.4channel.org/wg//">/wg/</a></li>
+                          <li><a href="http://boards.4channel.org/c//">/c/</a>&emsp;
+                              <a href="http://boards.4channel.org/v//">/v/</a></li>
+                          <li><a href="http://boards.4channel.org/ck//">/ck/</a>&emsp;
+                              <a href="https://boards.4channel.org/sci//">/sci/</a></li>
+                          <li><a href="https://wizchan.org/all/">/wizchan/</a></li>
+                          <li><a href="https://www.lainchan.org/%CE%A9/">/lainchain/</a></li>
+      					<li><a href="https://sushigirl.us/kaitensushi/">/kaitensushi/</a></li>
+
+
+
+
+
+                      </div>
+                  </ul>
+
+        </div>
+    </div>
+    <div class="|" id="todo">
+        <button class="+ add"><img src="img/add.png"></button>
+        <div class="+ addTodo">
+            <input type="text" value="" placeholder="todo" spellcheck="false">
+        </div>
+        <rows class="items">
+            <h1 class="+">todo</h1>
+        </rows>
+    </div>
+    <script type="text/javascript" src="js/strftime.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/powerline.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
 </body>
 </html>
